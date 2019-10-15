@@ -1,4 +1,4 @@
-package ca.grandcircus;
+package co.grandcircus;
 
 import java.util.Scanner;
 
@@ -19,17 +19,18 @@ public class EvenOdd {
 		String name = scan.next();
 
 		do {
-
+			
 			madCounter = 0;
 			
 			do {
+				
+				madCounter++;
 
 				switch (madCounter) {
-				case 1:
 				case 2:
+				case 3:
 					System.out.print(name + ", enter an integer between 1-100: ");
 					break;
-				case 3:
 				case 4:
 					System.out.print(name.toUpperCase() + ", ENTER AN INTEGER BETWEEN 1-100: ");
 					break;
@@ -83,8 +84,6 @@ public class EvenOdd {
 					}
 
 				}
-
-				madCounter++;
 
 			} while (num < 1 || num > 100);
 			
